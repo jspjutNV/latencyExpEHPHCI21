@@ -1,0 +1,259 @@
+
+{
+
+    description = "LowLatencyExp"; 
+    clickPhotonColors = (
+     Color3(0.2, 0.2, 0.2 ),
+     Color3(0.8, 0.8, 0.8 ) );
+    clickPhotonSide = "right";
+    clickPhotonSize = Vector2(0.1, 0.1);
+    clickPhotonVertPos = 0.5;
+    renderClickPhoton = true; 
+
+    "showHUD":  true,               // Show the player HUD (banner, ammo, health bar)
+    "showBanner":  true,            // Control the banner at the top of the screen (shows time, score, and session % complete)
+    "bannerLargeFontSize": 30.0,    // Large font size to use in the banner (% complete)
+    "bannerSmallFontSize": 14.0,    // Small font size to use in the banner (time remaining and score)
+    "hudFont": "console-small.fnt",       // Font to use for the HUD (fixed with highly suggested!)
+    
+    playerHeight = 1.5,
+    crouchHeight = 1.5,
+    jumpVelocity = 0.0,
+    
+    sceneName = "FPSci Simple Hallway";
+    sessParamsToLog = ["settingsVersion"],
+    "destroyedSound" : "sound/32882__Alcove_Audio__BobKessler_Metal_Bangs-1.wav", // Sound to play when target destroyed (explosion)
+    settingsVersion = 1; 
+
+    commandsOnSessionStart : ( "python \"scripts/ldat/lumisense_epsorts_team.py\" --com=COM10"),
+    commandsOnSessionEnd: ( "python \"scripts/ldat/event_log_insert_ldat.py\" results" ),
+
+    weapon = { 
+        id = "default"; 
+    }; 
+
+
+  "sessions": [
+    {
+        "id": "0W0D0",
+        "allowSensitivityChange": true,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 2,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 0,
+    },
+    {
+        "id": "0W0D1",
+        "allowSensitivityChange": true,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 2,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 2,
+    },
+    {
+        "id": "1W0D0",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 0,
+    },
+    {
+        "id": "1W0D1",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 2,
+    },
+    {
+        "id": "2W0D0",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 0,
+    },
+    {
+        "id": "2W0D1",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 2,
+    },
+    {
+        "id": "3W0D0",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 0,
+    },
+    {
+        "id": "3W0D1",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 2,
+    },
+    {
+        "id": "4W0D0",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 0,
+    },
+    {
+        "id": "4W0D1",
+        "allowSensitivityChange": false,
+        "frameRate": 240, // Session frame rate (in frames per second)
+        "expMode": "real", // Experiment mode ("real" or "training")
+        trials = ( 
+            {
+                count = 10; 
+                ids = ( "stray_sphere" ); 
+            },
+        );
+        scoreboardDuration = 1.0;
+        scoreboardRequireClick = true;
+        sessionCompleteFeedback = "End of the session! Click to advance.";
+        "blockCount": 10,
+        "cooldownThickness": 3,
+        "cooldownColor": Color4(1.0,1.0,1.0,0.75),
+        "weapon": #include("weapon/hitscan.Weapon.Any");
+        "frameDelay": 2,
+    },
+  ],
+    targets = ( 
+        { 
+            id = "stray_sphere"; 
+            "speed": [ 2.0, 3.6 ],
+            "visualSize": [ 0.15, 0.15 ],            "destSpace" : "world",
+            "spawnBounds": AABox {
+            Point3(37.522999, -3.5, -5.35916),
+            Point3(37.522999, 0.3, 4.64084),
+            },
+            "moveBounds": AABox {
+            Point3(37.522999, -3.5, -5.35916),
+            Point3(37.522999, 0.3, 4.64084),
+            },
+            "motionChangePeriod": [ 0.8, 1.5 ],
+            "jumpEnabled": false,
+            "respawnCount": 0,
+            "axisLocked": [true,false,false],
+        }, 
+    ); 
+    
+
+}

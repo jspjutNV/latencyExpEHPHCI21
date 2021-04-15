@@ -1,0 +1,49 @@
+{ 
+    currentUser = "User01"; 
+    sessions = ( ); 
+    settingsVersion = 1; 
+    allowRepeat = false; 
+    randomizeSessionOrder = false; 
+    users = ( 
+        { 
+            completedSessions = ( ); 
+            id = "User01"; 
+            sessions = ("0W0D1","1W0D1","1W0D0","2W0D0","2W0D1","3W0D1","3W0D0","4W0D0","4W0D1",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User02"; 
+            sessions = ("0W0D0","1W0D0","1W0D1","2W0D1","2W0D0","3W0D0","3W0D1","4W0D1","4W0D0",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User03"; 
+            sessions = ("0W0D1","1W0D1","1W0D0","2W0D0","2W0D1","3W0D1","3W0D0","4W0D0","4W0D1",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User04"; 
+            sessions = ("0W0D0","1W0D0","1W0D1","2W0D1","2W0D0","3W0D0","3W0D1","4W0D1","4W0D0",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User05"; 
+            sessions = ("0W0D1","1W0D1","1W0D0","2W0D0","2W0D1","3W0D1","3W0D0","4W0D0","4W0D1",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User06"; 
+            sessions = ("0W0D0","1W0D0","1W0D1","2W0D1","2W0D0","3W0D0","3W0D1","4W0D1","4W0D0",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User07"; 
+            sessions = ("0W0D1","1W0D1","1W0D0","2W0D0","2W0D1","3W0D1","3W0D0","4W0D0","4W0D1",);
+        },
+        { 
+            completedSessions = ( ); 
+            id = "User08"; 
+            sessions = ("0W0D0","1W0D0","1W0D1","2W0D1","2W0D0","3W0D0","3W0D1","4W0D1","4W0D0",);
+        } 
+    ); 
+}  
