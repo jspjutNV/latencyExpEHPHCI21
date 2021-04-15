@@ -13,3 +13,4 @@ del FPSci.%FPSCI_VERSION%.zip
 
 echo Copying configs over
 xcopy configs\*.Any FPSci\ /Y
+xcopy configs\weapon\hitscan.Weapon.Any FPSci\weapon\ /Y
