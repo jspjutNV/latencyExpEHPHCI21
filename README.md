@@ -1,6 +1,6 @@
 # A Case Study of First Person Aiming at Low Latency for Esports
 
-This repository contains an [FPSci](github.com/NVLabs/FPSci) user study experiment configuration whose results were published in the [EHPHCI 2021 workshop](ehphci.org) at [CHI 2021](https://chi2021.acm.org/). 
+This repository contains an [FPSci](github.com/NVLabs/FPSci) user study experiment configuration used in the paper titled ["A Case Study of First Person Aiming at Low Latency for Esports"](https://research.nvidia.com/publication/2021-05_A-Case-Study) published at the [EHPHCI 2021 workshop](ehphci.org) at [CHI 2021](https://chi2021.acm.org/).
 
 ## How to run
 
