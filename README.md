@@ -27,7 +27,7 @@ If you would like to cite this publication using latex, please use the following
     series = {EHPHCI 2021},
     publisher={},
     address={Online},
-    doi={}
+    doi={10.31219/osf.io/nu9p3}
 }
 ```
 
