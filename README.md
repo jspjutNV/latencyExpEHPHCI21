@@ -30,3 +30,7 @@ If you would like to cite this publication using latex, please use the following
     doi={}
 }
 ```
+
+## Mouse DPI
+
+Since the experiment users had mice set to 3200 DPI, that is the setting in the user config. If you'd like to use a mouse with a different DPI setting, please change that setting in the `userconfig.Any` file.
